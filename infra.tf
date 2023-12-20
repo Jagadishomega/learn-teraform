@@ -9,7 +9,7 @@ resource "aws_instance" "frontend" {
 }
 
 resource "aws_route53_record" "frontend" {
-  zone_id = Z012136531Q4PFU8T7ZYB
+  zone_id = "Z012136531Q4PFU8T7ZYB"
   name    = "frontend-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
@@ -27,7 +27,7 @@ resource "aws_instance" "mongodb" {
 }
 
 resource "aws_route53_record" "mongodb" {
-  zone_id = Z012136531Q4PFU8T7ZYB
+  zone_id = "Z012136531Q4PFU8T7ZYB"
   name    = "mongodb-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
@@ -45,7 +45,7 @@ resource "aws_instance" "catalogue" {
 }
 
 resource "aws_route53_record" "catalogue" {
-  zone_id = Z012136531Q4PFU8T7ZYB
+  zone_id = "Z012136531Q4PFU8T7ZYB"
   name    = "catalogue-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
@@ -63,7 +63,7 @@ resource "aws_instance" "redis" {
 }
 
 resource "aws_route53_record" "redis" {
-  zone_id = Z012136531Q4PFU8T7ZYB
+  zone_id = "Z012136531Q4PFU8T7ZYB"
   name    = "redis-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
@@ -81,7 +81,7 @@ resource "aws_instance" "user" {
 }
 
 resource "aws_route53_record" "user" {
-  zone_id = Z012136531Q4PFU8T7ZYB
+  zone_id = "Z012136531Q4PFU8T7ZYB"
   name    = "user-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
@@ -99,7 +99,7 @@ resource "aws_instance" "cart" {
 }
 
 resource "aws_route53_record" "cart" {
-  zone_id = Z012136531Q4PFU8T7ZYB
+  zone_id = "Z012136531Q4PFU8T7ZYB"
   name    = "cart-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
@@ -117,7 +117,7 @@ resource "aws_instance" "mysql" {
 }
 
 resource "aws_route53_record" "mysql" {
-  zone_id = Z012136531Q4PFU8T7ZYB
+  zone_id = "Z012136531Q4PFU8T7ZYB"
   name    = "mysql-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
@@ -135,8 +135,8 @@ resource "aws_instance" "shipping" {
 }
 
 resource "aws_route53_record" "shipping" {
-  zone_id = Z012136531Q4PFU8T7ZYB
-  name    = "mysql-dev.jagadish.cloud"
+  zone_id = "Z012136531Q4PFU8T7ZYB"
+  name    = "shipping-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
   records = [aws_instance.shipping.private_ip]
@@ -153,7 +153,7 @@ resource "aws_instance" "rabbitmq" {
 }
 
 resource "aws_route53_record" "rabbitmq" {
-  zone_id = Z012136531Q4PFU8T7ZYB
+  zone_id = "Z012136531Q4PFU8T7ZYB"
   name    = "rabbitmq-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
@@ -171,7 +171,7 @@ resource "aws_instance" "payment" {
 }
 
 resource "aws_route53_record" "payment" {
-  zone_id = Z012136531Q4PFU8T7ZYB
+  zone_id = "Z012136531Q4PFU8T7ZYB"
   name    = "payment-dev.jagadish.cloud"
   type    = "A"
   ttl     = 30
